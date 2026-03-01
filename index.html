@@ -24,24 +24,46 @@
 <meta name="twitter:image" content="https://unleashedcircle.com/og-image.jpg">
 
 <!-- Schema.org -->
+<meta name="robots" content="index, follow">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Unleashed Operators Circle",
-  "description": "A private, high-ticket mastermind for founders, builders, and operators who are deploying and scaling real AI systems.",
-  "url": "https://unleashedcircle.com"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "What is the Unleashed Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "The Unleashed Operators Circle is a private, application-only mastermind for founders, builders, and operators deploying and scaling real AI systems. It is curated by Fer Patel and includes bi-weekly sessions, bi-annual in-person events, and a small circle of serious operators." } },
-    { "@type": "Question", "name": "Who is the Unleashed Operators Circle for?", "acceptedAnswer": { "@type": "Answer", "text": "It is for founders, builders, and operators who are seriously deploying and scaling AI in their businesses. Membership is application-only and granted based on fit, commitment, and the value you bring to the circle." } },
-    { "@type": "Question", "name": "How do I join the Unleashed Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "You apply through the website. Applications are reviewed personally by Fer Patel. Membership is not purchased; it is applied for, reviewed, and granted. You will hear back within 48–72 hours." } },
-    { "@type": "Question", "name": "What is included in the Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "Bi-weekly live hot seats, guest experts, training and workshops, and open group discussion. Twice a year the full circle meets in person for intensive mastermind days. Members also get access to Fer's tool suite." } }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://unleashedcircle.com/#org",
+      "name": "Unleashed Operators Circle",
+      "description": "A private, high-ticket mastermind for founders, builders, and operators who are deploying and scaling real AI systems. Curated by Fer Patel. Application-only.",
+      "url": "https://unleashedcircle.com",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.ferpatel.com/#person",
+        "name": "Fer Patel",
+        "url": "https://www.ferpatel.com/",
+        "jobTitle": "VP of AI Strategy & Innovation"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Unleashed Network",
+        "url": "https://www.unleashed.training/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://unleashedcircle.com/#website",
+      "url": "https://unleashedcircle.com",
+      "name": "Unleashed Operators Circle",
+      "publisher": { "@id": "https://unleashedcircle.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the Unleashed Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "The Unleashed Operators Circle is a private, application-only mastermind for founders, builders, and operators deploying and scaling real AI systems. It is curated by Fer Patel and includes bi-weekly sessions, bi-annual in-person events, and a small circle of serious operators." } },
+        { "@type": "Question", "name": "Who is the Unleashed Operators Circle for?", "acceptedAnswer": { "@type": "Answer", "text": "It is for founders, builders, and operators who are seriously deploying and scaling AI in their businesses. Membership is application-only and granted based on fit, commitment, and the value you bring to the circle." } },
+        { "@type": "Question", "name": "How do I join the Unleashed Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "You apply through the website. Applications are reviewed personally by Fer Patel. Membership is not purchased; it is applied for, reviewed, and granted. You will hear back within 48–72 hours." } },
+        { "@type": "Question", "name": "What is included in the Operators Circle?", "acceptedAnswer": { "@type": "Answer", "text": "Bi-weekly live hot seats, guest experts, training and workshops, and open group discussion. Twice a year the full circle meets in person for intensive mastermind days. Members also get access to Fer's tool suite." } }
+      ]
+    }
   ]
 }
 </script>
@@ -61,6 +83,7 @@
     --text-muted: #7A7060;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   html { scroll-behavior: smooth; }
   body {
     background: var(--black);
@@ -455,7 +478,7 @@
       <path d="M8 6 H92 V66 Q92 106 50 109 Q8 106 8 66 Z"/>
       <path d="M57 16 L40 54 L51 54 L42 95 L72 44 L58 44 L70 16 Z"/>
     </svg>
-    <h1 class="hero-title">UNLEASHED</h1>
+    <h1 class="hero-title">UNLEASHED<span class="sr-only"> Operators Circle™ — Private AI Mastermind for Agency Founders &amp; Operators</span></h1>
   </div>
 
   <p class="hero-sub">Operators Circle™ Mastermind</p>
